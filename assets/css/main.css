@@ -116,17 +116,19 @@ a.project h2 {
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 10px 0;
+  border-bottom: 2px solid #1fe8ff;
+
 }
 
 a.project figure {
   float: left;
   width: 100%;
-  height: 164px;      /*height in pixel because we are in mobile*/
+  height: 165px;      /*height in pixel because we are in mobile*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-top: 2px solid #1fe8ff;
   -webkit-filter: grayscale(1);
+  position: relative;
 }
 
 a.project figure:hover {
@@ -142,32 +144,77 @@ a.project figure:hover {
 }
 
 @media screen and (min-width: 1024px) {
+
+header {
+  float: left;
+  width: 100%;
+  margin: 30px 0 100px 0;
+}
+
+h1 a {
+  float: left;
+  width: 112px;
+  height: 33px;
+  background: url(../img/logo-touch.png) no-repeat;
+  text-indent:-9999px;                          /*color: transparent;*/
+  overflow: hidden;                             /*means that it will always only show things that are within the width and height of that div*/
+}
+
+header ul {
+  float: left;
+  margin-top: -20px;
+  margin-left: 59.1397849462366%; /*550/930*/
+}
+
+header ul li {
+  float: left;
+}
+
+header ul li a {
+  float: left;
+  padding: 0 33px;
+}
+
+header ul li:first-child a {
+  padding: 0 33px 0 0 ;
+}
   
+a.project figure {
+  float: left;
+  width: 100%;
+  height: 134px;      /*height in pixel because we are in mobile*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(1);
+  border-top: 2px solid #1fe8ff;
+}
+
   .page-wrapper {
     width: 90.8203125%; /*930/1024*/
     margin: 0 4.6875%; /*48/1024*/
   }
 
+  .col-three-fifth {
+    float: left;
+    width: 59.1397849462366%; /*550/930*/
+    margin-right: 2.1505376344086%; /*20/930*/
+  }
+
   .col-one-fifth {
     float: left;
     width: 30.9090909090909%; /*170/550*/
-    margin-right: 3.6363636363636%; /*20/550*/ 
+    margin-right: 3.6363636363636%; /*20/550*/
   }
 
-  a.shilling figure 
+  a.shilling figure
   a.looklook figure {
     height: 134px;
   }
 
-  .col-three-fifth {
+  a.edinburgh {
     float: left;
-    width: 59.1397849462366%;     /*550/930*/
-    margin-right: 2.1505376344086%;        /*20/930*/
-  }
-
-    a.edinburgh {
-    float: left;
-    width: 65.4545454545455%;   /*360/550*/
+    width: 65.4545454545455%; /*360/550*/
   }
 
   a.edinburgh figure {
@@ -176,8 +223,8 @@ a.project figure:hover {
 
   a.blythswood {
     float: left;
-    width: 65.4545454545455%;   /*360/550*/
-    margin-right: 2.1505376344086%;        /*20/930*/
+    width: 65.4545454545455%;  /*360/550*/
+    margin-right: 3.6363636363636%; /*20/550*/
   }
 
   a.blythswood figure {
@@ -186,7 +233,7 @@ a.project figure:hover {
 
   a.baillie {
     float: left;
-    width: 32.0754716981132%; /*170/550*/
+    width: 30.9090909090909%; /*170/550*/
   }
 
   a.baillie figure {
@@ -196,23 +243,20 @@ a.project figure:hover {
   .col-two-fifth {
     float: left;
     width: 38.7096774193548%; /*360/930*/
-
   }
 
   a.fever figure {
-    float: left;
     height: 134px;
   }
 
   a.pizzaluxe figure {
-    float: left;
     height: 512px;
   }
 
   a.sheraton {
     float: left;
-    width: 38.7096774193548%;   /*360/930*/
-    margin-right: 2.1505376344086%;        /*20/930*/
+    width: 38.7096774193548%; /*360/930*/
+    margin-right: 2.1505376344086%;   /*20/930*/
   }
 
   a.sheraton figure {
@@ -222,7 +266,7 @@ a.project figure:hover {
   a.buzzworks {
     float: left;
     width: 18.2795698924731%; /*170/930*/
-    margin-right: 2.1505376344086%;        /*20/930*/
+    margin-right: 2.1505376344086%;   /*20/930*/
   }
 
   a.buzzworks figure {
@@ -231,17 +275,17 @@ a.project figure:hover {
 
   a.scottish {
     float: left;
-    width: 38.7096774193548%;   /*360/930*/
+    width: 38.7096774193548%; /*360/930*/
   }
-
+  
   a.scottish figure {
     height: 134px;
   }
 
   a.penfolds {
     float: left;
-    width: 28.0645161290323%;      /*261/930*/
-    margin-right: 2.1505376344086%;        /*20/930*/
+    width: 38.7096774193548%; /*360/930*/
+    margin-right: 2.1505376344086%;   /*20/930*/
   }
 
   a.penfolds figure {
@@ -259,17 +303,17 @@ a.project figure:hover {
 
   a.cooking {
     float: left;
-    width: 59.1397849462366%;     /*550/930*/
-    margin-right: 2.1505376344086%;        /*20/930*/
+    width: 59.1397849462366%;   /*550/930*/
+    margin-right: 2.1505376344086%;   /*20/930*/
   }
 
   a.cooking figure {
-    height: 320px;
+    height: 325px;
   }
 
   a.wwf {
     float: left;
-    width: 38.7096774193548%;   /*360/930*/
+    width: 38.7096774193548%; /*360/930*/
   }
 
   a.wwf figure {
@@ -279,34 +323,83 @@ a.project figure:hover {
   a.ricks {
     float: left;
     width: 18.2795698924731%; /*170/930*/
-    margin-right: 2.1505376344086%;        /*20/930*/
-  }
-
-  a.ricks figure
-  a.llnpa figure  {
-    height: 134px;
+    margin-right: 2.1505376344086%;   /*20/930*/
   }
 
   a.llnpa {
     float: left;
-    width: 18.2795698924731%; /*170/930*/ 
+    width: 18.2795698924731%; /*170/930*/
   }
 
-  header ul {
-    margin: 30px 0 0 0;
+  a.ricks figure 
+  a.llnpa figure {
+    height: 134px;
   }
+
 }
 
 @media screen and (min-width: 1200px) {
+
+  header {
+  float: left;
+  width: 100%;
+  margin: 30px 0 100px 0;
+}
+
+h1 a {
+  float: left;
+  width: 112px;
+  height: 33px;
+  background: url(../img/logo-touch.png) no-repeat;
+  text-indent:-9999px;                          /*color: transparent;*/
+  overflow: hidden;                             /*means that it will always only show things that are within the width and height of that div*/
+}
+
+header ul {
+  float: left;
+  margin-top: -15px;
+  margin-left: 60%;
+}
+
+header ul li {
+  float: left;
+}
+
+header ul li a {
+  float: left;
+  padding: 0 33px;
+}
+
+header ul li:first-child a {
+  padding: 0 33px 0 0 ;
+}
+
+  a.project figure {
+    float: left;
+    width: 100%;
+    height: 121px;      /*height in pixel because we are in mobile*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 2px solid #1fe8ff;
+    -webkit-filter: grayscale(1);
+}
+
   .page-wrapper {
-    width: 95.8333333333333%;      /*1380/1440*/
-    margin: 0 2.1527777777778%;     /*31/1440*/
+    width: 95.8333333333333%; /*1380/1440*/
+    margin: 0 2.1527777777778%; /*31/1440*/
   }
 
-  .col-one-fifth{
+  .col-three-fifth {
     float: left;
-    width: 30%;      /*120/400*/
-    margin-right: 5%;     /*20/400*/
+    width: 27.7777777777778%;   /*400/1440*/
+    margin-right: 1.3888888888889%;   /*20/1440*/
+  }
+
+  .col-one-fifth {
+    float: left;
+    width: 30%;   /*120/400*/
+    margin-right: 5%; /*20/400*/
   }
 
   a.shilling figure
@@ -314,60 +407,53 @@ a.project figure:hover {
     height: 121px;
   }
 
-  .col-three-fifth {
-    float: left;
-    width: 27.7777777777778%;     /*400/1440*/
-    margin-right: 1.3888888888889%;     /*20/1440*/
-  }
-
   a.edinburgh {
     float: left;
-    width: 65%;   /*260/400*/
+    width: 65%; /*260/400*/
   }
 
   a.edinburgh figure {
-    height: 299px;
+    height: 300px;
   }
 
   a.blythswood {
     float: left;
-    width: 65%;   /*260/400*/
-    margin-right: 5%;     /*20/400*/
+    width: 65%; /*260/400*/
+    margin-right: 5%; /*20/400*/
   }
 
   a.blythswood figure {
-    height: 299px;
+    height: 300px;
   }
 
   a.baillie {
     float: left;
-    width: 30%; /*120/400*/
+    width: 30%;   /*120/400*/
   }
 
   a.baillie figure {
-    height: 299px;
+    height: 300px;
   }
 
   .col-two-fifth {
     float: left;
     width: 18.0555555555556%; /*260/1440*/
-    margin-right: 1.3888888888889%;     /*20/1440*/
+    margin-right: 1.3888888888889%;   /*20/1440*/
+
   }
 
   a.fever figure {
-    float: left;
-    height: 120px;
+    height: 121px;
   }
 
   a.pizzaluxe figure {
-    float: left;
     height: 478px;
   }
 
   a.sheraton {
     float: left;
-    width: 18.125%;   /*261/1440*/
-    margin-right: 1.3888888888889%;     /*20/1440*/
+    width: 18.0555555555556%; /*260/1440*/
+    margin-right: 1.3888888888889%;   /*20/1440*/
   }
 
   a.sheraton figure {
@@ -376,8 +462,8 @@ a.project figure:hover {
 
   a.buzzworks {
     float: left;
-    width: 8.4722222222222%; /*122/1440*/
-    margin-right: 1.3888888888889%;     /*20/1440*/
+    width: 8.3333333333333%;   /*120/1440*/
+    margin-right: 1.3888888888889%;   /*20/1440*/
   }
 
   a.buzzworks figure {
@@ -386,17 +472,17 @@ a.project figure:hover {
 
   a.scottish {
     float: left;
-    width: 18.0555555555556%;   /*260/1440*/
+    width: 18.0555555555556%; /*260/1440*/
   }
-
+  
   a.scottish figure {
     height: 121px;
   }
 
   a.penfolds {
     float: left;
-    width: 18.0555555555556%;   /*260/1440*/
-    margin-right: 1.3888888888889%;     /*20/1440*/
+    width: 18.0555555555556%; /*260/1440*/
+    margin-right: 1.3888888888889%;   /*20/1440*/
   }
 
   a.penfolds figure {
@@ -405,7 +491,7 @@ a.project figure:hover {
 
   a.citi {
     float: left;
-    width: 8.4722222222222%; /*122/1440*/
+    width: 8.3333333333333%;   /*120/1440*/
   }
 
   a.citi figure {
@@ -414,8 +500,8 @@ a.project figure:hover {
 
   a.cooking {
     float: left;
-    width: 27.8472222222222%;     /*401/1440*/
-    margin-right: 1.3888888888889%;     /*20/1440*/
+    width: 27.7777777777778%;   /*400/1440*/
+    margin-right: 1.3888888888889%;   /*20/1440*/
   }
 
   a.cooking figure {
@@ -424,7 +510,7 @@ a.project figure:hover {
 
   a.wwf {
     float: left;
-    width: 18.0555555555556%;   /*260/1440*/
+    width: 18.0555555555556%; /*260/1440*/
   }
 
   a.wwf figure {
@@ -433,30 +519,26 @@ a.project figure:hover {
 
   a.ricks {
     float: left;
-    width: 8.4722222222222%; /*122/1440*/
-    margin-right: 1.3888888888889%;     /*20/1440*/
+    width: 8.3333333333333%;   /*120/1440*/
+    margin-right: 1.3888888888889%;   /*20/1440*/
   }
 
   a.llnpa {
     float: left;
-    width: 8.4722222222222%; /*122/1440*/
+    width: 8.3333333333333%;   /*120/1440*/
   }
 
-  a.ricks figure
-  a.llnpa figure  {
+  a.ricks figure 
+  a.llnpa figure {
     height: 121px;
   }
 
 
 
-  header ul {
-    margin: 30px 0 0 0;
-  }
-
-
 
 
 }
+
 
 
 
