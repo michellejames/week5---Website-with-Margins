@@ -129,6 +129,8 @@ a.project figure {
   background-repeat: no-repeat;
   -webkit-filter: grayscale(1);
   position: relative;
+  background-position: top;
+
 }
 
 a.project figure:hover {
@@ -188,6 +190,8 @@ a.project figure {
   background-repeat: no-repeat;
   -webkit-filter: grayscale(1);
   border-top: 2px solid #1fe8ff;
+  background-position: top;
+
 }
 
   .page-wrapper {
@@ -383,6 +387,8 @@ header ul li:first-child a {
     background-repeat: no-repeat;
     border-top: 2px solid #1fe8ff;
     -webkit-filter: grayscale(1);
+    background-position: top;
+
 }
 
   .page-wrapper {
