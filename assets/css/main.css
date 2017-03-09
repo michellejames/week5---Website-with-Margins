@@ -190,6 +190,7 @@ a.project figure {
   background-repeat: no-repeat;
   -webkit-filter: grayscale(1);
   border-top: 2px solid #1fe8ff;
+  position: relative;
   background-position: top;
 
 }
@@ -388,6 +389,7 @@ header ul li:first-child a {
     border-top: 2px solid #1fe8ff;
     -webkit-filter: grayscale(1);
     background-position: top;
+    position: relative;
 
 }
 
